@@ -1,0 +1,47 @@
+\documentclass[referat]{SCWorks}
+\usepackage{preamble}
+
+\begin{document}
+\chair{математической кибернетики и компьютерных наук}
+\title{Современные языки программирования}
+\course{2}
+\group{151}
+\napravlenie{09.03.04 "--- Программная инженерия}
+\author{Григорьева Данилы Евгеньевича}
+% Заведующий кафедрой 
+\chtitle{доцент, к.\,ф.-м.\,н.}
+\chname{С.\,В.\,Миронов}
+% Научный руководитель (для реферата преподаватель проверяющий работу)
+\satitle{доцент, к.\,п.\,н.} %должность, степень, звание
+\saname{А.\,П.\,Грецова}
+
+\maketitle
+
+% Включение нумерации рисунков, формул и таблиц по разделам (по умолчанию -
+% нумерация сквозная) (допускается оба вида нумерации)
+\secNumbering
+
+\tableofcontents
+\input{sections/intro.tex}
+1\cite{Agranovich_1983}
+
+\langsection{python}{Python}
+\langsection{cpp}{C++}
+\langsection{rust}{Rust}
+\langsection{java}{Java}
+\langsection{kotlin}{Kotlin}
+\langsection{dart}{Dart}
+\langsection{js}{JavaScript}
+
+\input{sections/outro.tex}
+
+\newpage
+
+\inputencoding{cp1251}
+\bibliographystyle{gost780uv}
+\bibliography{thesis}
+\inputencoding{utf8}
+
+\appendix
+
+\end{document}
